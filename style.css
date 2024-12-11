@@ -1,0 +1,519 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+*{
+    font-family: 'Quicksand', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none; 
+    box-sizing: border-box;
+}
+
+:root{ 
+    --maincolor: #04436e;
+    --maincolor2: #1d567a;
+}
+
+*::selection{ 
+    background: var(--maincolor);
+    color: #fff;
+}
+
+body{
+    background-image: url('images/bg.png');
+    max-width: 1920px;
+    max-height: 2216;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+.content{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    
+}
+
+header{
+    width: 100%;
+    position: relative;
+    background-image: url('images/bg.png');
+    border-bottom: .1rem solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    padding: 5px 10%;
+}
+
+header .augsejasekcija{
+    background-color: var(--maincolor);
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 50px;
+    color: #fff;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+.pogas button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    cursor: pointer;
+    box-shadow: 0 .5rem 1rem rgb(255, 255, 255, 0.15);
+}
+
+.zilapoga{
+    background-color: #04436e;
+}
+
+.rozapoga{
+    background-color: #902094;
+}
+
+.melnapoga{
+    background-color: #1b1b1b;
+}
+
+.dzeltenapoga{
+    background-color: #cabe11;
+}
+
+header .logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 50px;
+    font-size: 2rem;
+    margin-top: 60px;
+    font-weight: 700;
+    color: var(--maincolor);
+    box-sizing: border-box;
+}
+
+header img{
+    height: 60px;
+}
+
+header p{
+    font-size: 1.8rem;
+    text-align: right;
+    margin-left: auto;
+    margin: 0;
+}
+
+span{
+    color: #fff;
+    font-size: 2rem;
+    background-color: var(--maincolor);
+    border-radius: 0.5rem;
+    padding: 5px 5px;
+}
+
+#sakums{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 15px;
+    background-image: url(images/bg.png);
+}
+
+#sakums .content{
+    height: 250px;
+    line-height: 1.8;
+}
+
+#sakums h1{
+    color: var(--maincolor);
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#sakums p{
+    text-align: center;
+    color: #828085
+}
+
+#sakums img{
+    background-color:#dedede;
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+}
+
+#pakalpojumi{
+    padding: 20px 0;
+}
+
+#pakalpojumi h1{
+    text-align: center;
+    color: var(--maincolor2);
+    padding: 1rem;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#pakalpojumi .box {
+    background-color: #f5f5f5;
+    padding: 2rem;
+    width: 575px;
+    border-radius: .5rem;
+    box-sizing: border-box;
+}
+
+.box-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+#pakalpojumi .box-content {
+    display: flex;
+    align-items: center;
+}
+
+#pakalpojumi .box:hover img{
+    transform: scale(1.2);
+}
+
+#pakalpojumi .box img{
+    width: 100px;
+    margin-right: 20px;
+}
+
+#pakalpojumi h3{
+    font-size: 1.2rem;
+    color: var(--maincolor);
+    margin-bottom: 15px;
+}
+
+#pakalpojumi p{
+    font-size: 1rem;
+    flex: 1;
+}
+
+#atsauksmes{
+    padding: 50px 0;
+}
+
+#atsauksmes h1{
+    text-align: center;
+    color: var(--maincolor2);
+    padding-bottom: 2.5rem;
+    font-size: 2rem;
+}
+
+#atsauksmes h3{
+    padding-top: 60px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: var(--maincolor2);
+}
+
+#atsauksmes p{
+    text-align: center;
+    color: #3b3b3c;
+    font-size: .9rem;
+}
+
+#atsauksmes .box-container{
+    display: flex;
+    justify-content: center;
+    gap: 1px;
+    flex-wrap: wrap;
+}
+
+.btn{ 
+    display: inline-block;
+    background: #999999;
+    color: #fff;
+    padding:.4rem 4rem;
+    margin-top: 1rem;
+    border-radius: .3rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.btn:hover{
+    background: #333;
+}
+
+#atsauksmes .box{
+    background: #e2e2e2;
+    margin: 1rem;
+    padding: 2rem;
+    width: 400px;
+    height: 300px;
+    border-radius: .5rem;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#atsauksmes img{
+    position: absolute;
+    top: -30px; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 115px;
+    height: 115px;
+    background-color: white;
+    border-radius: 57%;
+    overflow: hidden;
+}
+
+.footeracontent{
+    position: relative;
+    background-image: url('images/bg2.png');
+    background-color: var(--maincolor2); 
+    color: #fff; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 250px;
+}
+
+.footeracontent h1{
+    color: #eee;
+    padding-bottom: 5px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.footeracontent p{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.footeracontent form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.footeracontent input[type=submit]{
+    background: #fff;
+    color: var(--maincolor);
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.footeracontent input[type=submit]:hover{
+    background: #14bc08;
+    color: #ffffff;
+}
+
+.footeracontent form input{
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    color: #fff;
+}
+
+.footeracontent{
+    text-align: center;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 70px;
+    background-color: var(--maincolor);
+}
+
+footer p{
+    color:#ccc;
+}
+
+
+.slaidrade {
+    height: 80%;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* noslept bildes default */
+  .fade {
+    display: none;
+  }
+  
+  /* Next & previous pogas */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Posizicijas "next button" laba puse */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+  }
+  
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  .fade {
+    animation-name: fade;
+    animation-duration: 1s;
+  }
+
+
+
+#myBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 3; 
+    border: none;
+    outline: none; 
+    background-color: var(--maincolor); 
+    color: white; 
+    cursor: pointer;
+    padding: 20px 30px; 
+    border-radius: 20px; 
+    font-size: 20px; 
+    font-weight: 600;
+  }
+  
+  #myBtn:hover {
+    background-color: var(--maincolor2); 
+  }
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+@media (max-width: 1200px) {
+    #sakums .content{
+        width: 80%;
+    }
+
+    .footeracontent, footer{
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    #sakums{
+        margin-top: 100px; 
+        background-attachment: scroll; 
+    }
+
+    #sakums .content{
+        width: 90%; 
+        padding: 15px;
+    }
+
+    .footeracontent h1, footer h1{
+        font-size: 1.5rem; 
+    }
+
+    .footeracontent, footer{
+        padding: 20px 10px;
+    }
+}
+
+@media (max-width: 480px){
+    header{
+        flex-direction: column; 
+    }
+
+    #sakums{
+        margin-top: 50px;
+        min-height: 60vh; 
+        background-size: contain;
+    }
+
+    #sakums .content{
+        width: 100%; 
+        padding: 10px;
+    }
+
+    .footeracontent h1, footer h1{
+        font-size: 1.2rem;
+    }
+
+    .footeracontent p,footer p{
+        font-size: 0.9rem;
+    }
+
+    .footeracontent form input{
+        width: 100%; 
+        margin-bottom: 10px;
+    }
+}
